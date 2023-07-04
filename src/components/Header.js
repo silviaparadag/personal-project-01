@@ -1,16 +1,19 @@
 import '../styles/layout/Header.scss';
+import menuLogo from '../images/icons/ico-menu.svg';
+import cityHero from '../images/berlin/berlin-01.jpg';
 
 const Header = () => {
     
     return(
+      <div className="nav">
         <header className="header">
-          <h1 className='header__title'>
-            Hola mundo!
-          </h1>
-          <h3 className='header__subtitle'>
-            Abrir consola
-          </h3>
-        </header>
+          <a href="https://adalab.es/" target="_blank" rel='noreferrer'>
+                  <img className="header__title--logo" src={menuLogo}
+                    alt="Menu desplegable"/></a>
+          <h1 className="header__title">CITIES</h1>
+                  {/* <img className="header__title--img"src={cityHero} alt="Foto de la Neue National Gallerie de Berlin" /> */}
+          </header>
+      </div>
     )
 }
 

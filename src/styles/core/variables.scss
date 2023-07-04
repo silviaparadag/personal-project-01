@@ -8,9 +8,11 @@ $font-secondary3: 'Bebas Neue', sans-serif;
 $font-secondary4: 'Libre Caslon Text', serif;
 
 // colors
-$color-primary: #CC212A;
-$color-primary2: #808080;
+$color-primary: #000;
+$color-primary2: #fff;
 $color-primary3: #ffe4c4;
+$color-primary4: #ffe4c4;
+$color-primary5: #a98f6f;
 $color-secondary: #fff;
 $color-secondary2: #f08080;
 $color-secondary3: #fafad1;
@@ -18,3 +20,6 @@ $gradient-bgd-main: linear-gradient(0, #fafad152, #8080806a);
 $gradient-bgd: linear-gradient(180deg, #fafad1, #808080ba);
 $gradient-bgd2: linear-gradient(180deg, #fafad1, #b71d1d);
 $gradient-bgd2: linear-gradient(90deg, #fafad1, #b71d1d);
+
+$black: #000;
+$white-50: rgba(255, 255, 255, 0.5);
