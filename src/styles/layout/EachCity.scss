@@ -1,0 +1,15 @@
+@import '../core/variables';
+@import '../core/mixins';
+
+
+.eacharticle {
+    height: 250px;
+    width: 30vw;
+    border: 1px dotted gray;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
