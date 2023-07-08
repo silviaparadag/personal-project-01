@@ -10,7 +10,7 @@ return (
                 Berlin
         </li>
         <li className="eacharticle">
-                New York City
+                <div className='eacharticle__content'>New York City</div>
         </li>
         <li className="eacharticle">
                 Madrid
