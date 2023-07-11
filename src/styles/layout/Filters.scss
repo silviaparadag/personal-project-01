@@ -1,0 +1,29 @@
+@import '../core/variables';
+@import '../core/mixins';
+
+
+.filters {
+    padding: 20px 0px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px $color-secondary;
+
+    @include Tablet() {
+        padding: 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    @include Desktop() {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+}
