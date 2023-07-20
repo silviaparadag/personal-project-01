@@ -1,6 +1,6 @@
 import { slide as Menu } from 'react-burger-menu';
-import '../styles/layout/MenuBar.scss';
 import { useState } from 'react';
+import '../styles/layout/MenuBar.scss';
 
 const MenuBar = () => {
   const [menuOpenState, setMenuOpenState] = useState(false);
