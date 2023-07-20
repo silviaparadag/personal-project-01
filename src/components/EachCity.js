@@ -13,16 +13,16 @@ return (
                 <div className='eacharticle__content'>New York City</div>
         </li>
         <li className="eacharticle">
-                Madrid
+                Copenhagen
         </li>
          <li className="eacharticle">
                 Milan
         </li>
         <li className="eacharticle">
-                Copenhagen
+                Lisbon
         </li>
         <li className="eacharticle">
-                Lisbon
+                Madrid
         </li>
         <li className="eacharticle">
                 Marrakech
