@@ -1,4 +1,4 @@
-import { slide as Menu } from 'react-burger-menu';
+/*  import { slide as Menu } from 'react-burger-menu';
 import { useState } from 'react';
 import '../styles/layout/MenuBar.scss';
 
@@ -51,3 +51,4 @@ const MenuBar = () => {
   );
 };
 export default MenuBar;
+*/

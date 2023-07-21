@@ -6,11 +6,15 @@ const EachCity = () => {
 
 return (
     <>
-        <li className="eacharticle">
+        <li className="eacharticle ">
                 Berlin
         </li>
+        
         <li className="eacharticle">
-                <div className='eacharticle__content'>New York City</div>
+                <div className="eacharticle__card">
+                        <div className='eacharticle__card--front'>New York City</div>
+                        <div className='eacharticle__card--back'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, incidunt omnis! </div>
+                </div>
         </li>
         <li className="eacharticle">
                 Copenhagen
