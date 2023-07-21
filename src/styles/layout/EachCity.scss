@@ -4,21 +4,15 @@
 
 .eacharticle {
     background-color: transparent;
-    perspective: 1000px;
     height: 250px;
     width: 250px;
     border: 1px dotted gray;
     border-radius: 125px / 50%;
     display: flex;
 
-
     &__card {
-        position: relative;
-        text-transform: uppercase;
-        transition: transform 1s;
-        transform-style: preserve-3d;
+
         display: flex;
-        object-fit: cover;
 
         &--front,
         &--back {
@@ -27,37 +21,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            backface-visibility: hidden;
             border-radius: 125px / 50%;
+            padding: 20px;
         }
 
         &--front {
+            text-transform: uppercase;
             background-color: $color-primary3;
             color: $color-primary;
         }
 
         &--back {
-            background-color: $color-primary5;
-            color: $color-primary2;
-            transform: rotateY(180deg);
+            background-color: $color-primary2;
+            color: $color-primary;
         }
     }
-}
 
-
-.eacharticle:hover .eacharticle__card {
-    transform: rotateY(180deg);
-}
-
-/* LV:
-    caja img(picture) {
-        position: absolute;
-            top: 0;
-            width: 100%;
+    .react-card-flip {
+        height: 250px;
+        width: 250px;
+        border: 1px dotted gray;
+        border-radius: 125px / 50%;
     }
+}
 
-    img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;}
- */
+// .eacharticle:hover .eacharticle__card {
+//     transform: rotateY(180deg);
+// }

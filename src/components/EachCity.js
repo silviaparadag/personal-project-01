@@ -1,8 +1,18 @@
+import CardFlip from 'react-card-flip';
+import { useState } from 'react';
+
 import '../styles/layout/EachCity.scss';
 
 
 
 const EachCity = () => {
+
+const [isFlipped, setFlipped] = useState(false);
+ 
+  const handleFlip = (ev) => {
+        ev.preventDefault();
+        (isFlipped === false ? setFlipped(true) : setFlipped(false)) 
+  };
 
 return (
     <>
@@ -13,12 +23,16 @@ return (
         <li className="eacharticle">
                 <div className="eacharticle__card">
                         <div className='eacharticle__card--front'>New York City</div>
-                        <div className='eacharticle__card--back'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, incidunt omnis! </div>
                 </div>
         </li>
-        <li className="eacharticle">
-                Copenhagen
-        </li>
+        <CardFlip isFlipped={isFlipped} flipDirection="horizontal" className="eacharticle">
+                <div 
+                className='eacharticle__card--front' onClick={handleFlip}> Copenhagen
+                
+                </div>
+                <div className='eacharticle__card--back' onClick={handleFlip}>Iure ullam quibusdam officiis repellat temporibus minima quos ex ipsam, illo non expedita animi excepturi, voluptatibus fuga corporis nisi? 
+               </div>
+        </CardFlip>
          <li className="eacharticle">
                 Milan
         </li>
