@@ -22,31 +22,30 @@ server.listen(port, () => {
 });
 
 
-server.get("/recetas", async (req, res) => {
-  console.log('Holis');
-  itemsController.getRecipes(req, res);
+server.get("/cities", async (req, res) => {
+  itemsController.getCities(req, res);
 });
 
-server.get("/recetas/:eachId", async (req, res) => {
-  itemsController.getOneRecipe(req, res);
+server.get("/cities/:eachId", async (req, res) => {
+  itemsController.getOneCity(req, res);
 });
 
-server.post("/recetas", async (req,res) => {
-  itemsController.createRecipe(req, res);
+server.post("/cities", async (req,res) => {
+  itemsController.createCity(req, res);
 });
 
-server.put("/recetas/:eachId", async (req,res) => {
-itemsController.updateRecipe(req,res);
+server.put("/cities/:eachId", async (req,res) => {
+itemsController.updateCity(req,res);
 });
 
-server.delete("/recetas/:eachId", async (req,res) => {
-  itemsController.deleteRecipe(req,res)
+server.delete("/cities/:eachId", async (req,res) => {
+  itemsController.deleteCity(req,res)
 });
 
 
-server.get('/receta/:eachId', async (req, res) => {
+server.get('/city/:eachId', async (req, res) => {
   const recipeId = req.params.eachId;
-  const sql = `SELECT * FROM recetas WHERE id= ? `;
+  const sql = `SELECT * FROM cities WHERE idcity= ? `;
   const conn = await dbConn.getConnection();
   const [results] = await conn.query(sql, recipeId);
   res.render('detail', results[0]);

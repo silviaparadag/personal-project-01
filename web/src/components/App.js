@@ -1,8 +1,8 @@
 import '../styles/App.scss';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {Route, Routes} from 'react-router-dom';
-
+import dataApi from '../services/api';
 import Landing from './Landing';
 import Header from './Header';
 import Filters from './Filters';
@@ -13,13 +13,21 @@ import Footer from './Footer';
 //import {Link, Route, Routes} from 'react-router-dom';
 
 const App = ()  => {
-
+  const [cityArchive,setCityArchive] = useState([]);
   const [searchByCity, setSearchByCity] = useState('');
 
 
   const handleFilter = (ev) => {
     setSearchByCity(ev.target.value);
-  }
+  };
+
+  useEffect(() => {
+    dataApi.getCitiesApi()
+    .then(dataJson => {
+        setCityArchive(dataJson);
+    })
+  }, [])
+  console.log(cityArchive);
 
 
   return (
@@ -30,7 +38,7 @@ const App = ()  => {
             <main className='main'>
               <h3 className='main__title'>The Collection</h3>
               <Filters searchByCity={searchByCity} handleFilter={handleFilter} />
-              <CityList/>
+              <CityList cityArchive={cityArchive}/>
             </main>
             </>}>
           </Route>

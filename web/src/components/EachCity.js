@@ -5,7 +5,7 @@ import '../styles/layout/EachCity.scss';
 
 
 
-const EachCity = () => {
+const EachCity = ({eachCity}) => {
 
 const [isFlipped, setFlipped] = useState(false);
  
@@ -18,20 +18,22 @@ return (
     <>
         <CardFlip isFlipped={isFlipped} flipDirection="horizontal" className="eacharticle">
                 <div 
-                className='eacharticle__card--front' onClick={handleFlip}> Copenhagen
-                
+                className='eacharticle__card--front' onClick={handleFlip}> 
+                <img className='eacharticle__card--frontimg' src={eachCity.city_img} alt={eachCity.city_name} /> 
+                <div className='eacharticle__card--fronttitle'>{eachCity.city_name}</div>
                 </div>
-                <div className='eacharticle__card--back' onClick={handleFlip}>Iure ullam quibusdam officiis repellat temporibus minima quos ex ipsam, illo non expedita animi excepturi, voluptatibus fuga corporis nisi? 
+                <div className='eacharticle__card--back' onClick={handleFlip}>{eachCity.city_desc_short}
                </div>
         </CardFlip>
+    </>
+);
+}
+
+export default EachCity;
+
+/*  CITY LIST
         <li className="eacharticle ">
                 Berlin
-        </li>
-        
-        <li className="eacharticle">
-                <div className="eacharticle__card">
-                        <div className='eacharticle__card--front'>New York City</div>
-                </div>
         </li>
          <li className="eacharticle">
                 Milan
@@ -53,9 +55,5 @@ return (
         </li>
         <li className="eacharticle">
                 Beijing
-        </li>
-    </>
-);
-}
-
-export default EachCity;
+        </li> 
+*/

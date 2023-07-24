@@ -1,15 +1,21 @@
-// Fichero src/services/api.js
-const callToApi = () => {
-  // Llamamos a la API
-  return fetch('') // Este 5 es el id de Leia Skywalker
+const getCitiesApi = async () => {
+  const fetchApi = await fetch ('http://localhost:4000/cities');
+  const dataJson = await fetchApi.json();
+  return dataJson.results;
+}
+
+const sendToApi = (data) => {
+  return fetch('http://localhost:4000/cities', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: { 'content-type': 'application/json' },
+  })
     .then((response) => response.json())
-    .then((response) => {
-      // Cuando responde la API podemos limpiar los datos aquí
-      const result = {
-        
-      };
-      return result;
+    .then((data) => {
+      return data;
     });
 };
 
-export default callToApi;
+const objToExport = { sendToApi:sendToApi, getCitiesApi:getCitiesApi};
+
+export default objToExport;
