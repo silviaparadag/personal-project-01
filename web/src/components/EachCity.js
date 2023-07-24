@@ -16,6 +16,14 @@ const [isFlipped, setFlipped] = useState(false);
 
 return (
     <>
+        <CardFlip isFlipped={isFlipped} flipDirection="horizontal" className="eacharticle">
+                <div 
+                className='eacharticle__card--front' onClick={handleFlip}> Copenhagen
+                
+                </div>
+                <div className='eacharticle__card--back' onClick={handleFlip}>Iure ullam quibusdam officiis repellat temporibus minima quos ex ipsam, illo non expedita animi excepturi, voluptatibus fuga corporis nisi? 
+               </div>
+        </CardFlip>
         <li className="eacharticle ">
                 Berlin
         </li>
@@ -25,14 +33,6 @@ return (
                         <div className='eacharticle__card--front'>New York City</div>
                 </div>
         </li>
-        <CardFlip isFlipped={isFlipped} flipDirection="horizontal" className="eacharticle">
-                <div 
-                className='eacharticle__card--front' onClick={handleFlip}> Copenhagen
-                
-                </div>
-                <div className='eacharticle__card--back' onClick={handleFlip}>Iure ullam quibusdam officiis repellat temporibus minima quos ex ipsam, illo non expedita animi excepturi, voluptatibus fuga corporis nisi? 
-               </div>
-        </CardFlip>
          <li className="eacharticle">
                 Milan
         </li>

@@ -7,7 +7,7 @@
     height: 250px;
     width: 250px;
     border: 1px dotted gray;
-    border-radius: 125px / 50%;
+    // border-radius: 125px / 50%;
     display: flex;
 
     &__card {
@@ -21,7 +21,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 125px / 50%;
+            // border-radius: 125px / 50%;
             padding: 20px;
         }
 
@@ -41,7 +41,7 @@
         height: 250px;
         width: 250px;
         border: 1px dotted gray;
-        border-radius: 125px / 50%;
+        // border-radius: 125px / 50%;
     }
 }
 
