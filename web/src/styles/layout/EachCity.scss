@@ -1,0 +1,68 @@
+@import '../core/variables';
+@import '../core/mixins';
+
+
+.eacharticle {
+    background-color: transparent;
+    height: 250px;
+    width: 250px;
+    border: 1px dotted gray;
+    display: flex;
+
+
+    &__card {
+        text-decoration: none;
+        display: flex;
+
+        &--front,
+        &--back {
+            height: 250px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        &--front {
+            position: relative;
+            text-transform: uppercase;
+            background-color: $color-primary3;
+            color: $color-primary;
+        }
+
+        &--frontimg {
+            height: 250px;
+        }
+
+        &--fronttitle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--back {
+            background-color: $color-primary2;
+            color: $color-primary;
+
+        }
+    }
+
+    .react-card-flip {
+        height: 250px;
+        width: 250px;
+        border: 1px dotted gray;
+
+    }
+}
+
+.link {
+    text-decoration: none;
+}
+
+// .eacharticle:hover .eacharticle__card {
+//     transform: rotateY(180deg);
+// }
+// border-radius: 125px / 50%;

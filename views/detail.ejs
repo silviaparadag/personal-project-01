@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel guide Collection</title>
+    <link rel="stylesheet" href="/main.css" />
+    <script src="https://kit.fontawesome.com/b7d13fbbc9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/favicon.png" />
+</head>
+
+<body class="body">
+    <header className="header">>
+        <h1 className="header__title">
+            <%= city_name %>
+        </h1>
+
+    </header>
+    <main class="main">
+        <img class="city__image" src="<%= city_img %>" alt="#" />
+        <p class="city__desc">
+            <%= city_desc_long%>
+        </p>
+
+    </main>
+    <footer className='footer'>
+        <span className="footer__text"> © <a href="https://adalab.es/bootcamp-programacion/" target="_blank"
+                rel="noreferrer" className="footer__text--link">Adalab 2023</a></span>
+        <span className="footer__text">Trótula promotion</span>
+    </footer>
+</body>
+
+</html>

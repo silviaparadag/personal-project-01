@@ -1,0 +1,22 @@
+@import '../core/variables.scss';
+
+.main {
+    padding: 10px;
+
+    &__title {
+        font-weight: 700;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-decoration: none;
+
+    }
+
+}
