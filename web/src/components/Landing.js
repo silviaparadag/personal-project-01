@@ -7,7 +7,6 @@ const Landing = () => {
 
 return (
     <div className='landing'>
-        Holis
         <Link className='landing__btn' to="/Home">
           GO
         </Link>

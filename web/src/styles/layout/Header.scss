@@ -3,7 +3,7 @@
 .header {
     margin: 0;
     height: 40vh;
-
+    padding-top: 40px;
     background-image: linear-gradient(to bottom, #ffffff80 25%, #000), url("../../images/berlin/berlin-01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +20,9 @@
         font-size: 2rem;
         text-transform: uppercase;
         font-weight: bold;
+        text-shadow: 0 1px 1px rgba(black, .15),
+            0 3px 10px rgba(black, .15),
+            0 3px 20px rgba(black, .35);
 
         &--logo {
             position: fixed;

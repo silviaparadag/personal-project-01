@@ -1,10 +1,10 @@
 import '../styles/layout/Header.scss';
 import menuLogo from '../images/icons/ico-menu.svg';
 //import cityHero from '../images/berlin/berlin-01.jpg';
-//import MenuBar from './MenuBar';
+// import MenuBar from './MenuBar';
 
 const Header = () => {
-    
+
     return(
       <div className="nav">
         <header className="header">
