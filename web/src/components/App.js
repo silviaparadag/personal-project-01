@@ -31,7 +31,7 @@ const App = () => {
   const filteredCities = cityArchive.filter((eachCity) =>
     eachCity.city_name.toLowerCase().includes(searchByCity.toLowerCase())
   );
-  console.log(cityArchive);
+  // console.log(cityArchive);
 
   return (
     <div className="App">
