@@ -4,24 +4,35 @@
 import EachCity from './EachCity';
 import '../styles/layout/CityList.scss';
 
-
-
-const CityList = ({cityArchive}) => {
-
-
-  const cityHTML =  cityArchive.map(
-    (eachCity) => (
-      <li key={eachCity.idcity} className="eacharticle">
-         <a className='link' href="/#"> 
-         <EachCity eachCity={eachCity} /> </a>
+const CityList = ({ cityArchive }) => {
+  const dataList = cityArchive.map((eachCity) => (
+    <li key={eachCity.idcity} className="eacharticle">
+      <a className="link" href="/#">
+        <EachCity eachCity={eachCity} />
+      </a>
+    </li>
+  ));
+  /* 
+  const dataList = () => {
+    if (cityArchive.length >= 1) {
+      return cityArchive.map((eachCity) => (
+        <li key={eachCity.idcity} className="eacharticle">
+          <a className="link" href="/#">
+            <EachCity eachCity={eachCity} />
+          </a>
         </li>
-    ));
-    
-    return(
-        <ul className='main__list'>{cityHTML}</ul>
-    )
-}
+      ));
+    } 
+  */
+  // const cityHTML = cityArchive.map((eachCity) => (
+  //   <li key={eachCity.idcity} className="eacharticle">
+  //     <a className="link" href="/#">
+  //       <EachCity eachCity={eachCity} />{' '}
+  //     </a>
+  //   </li>
+  // ));
+
+  return <ul className="main__list">{dataList}</ul>;
+};
 
 export default CityList;
-
-
