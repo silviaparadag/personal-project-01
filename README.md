@@ -1,5 +1,3 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
-
 # City Guide, Travel Book and Fashion Eye
 
 An online platform created to help travellers discover the best of different cities around the world through my own personal experiences.
