@@ -1,3 +1,4 @@
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-IN%20PROGRESS-green)
 # City Guide, Travel Book and Fashion Eye
 
 An online platform created to help travellers discover the best of different cities around the world through my own personal experiences.
@@ -23,15 +24,20 @@ Interesting shops
 
 &nbsp;
 ## Tools ⚒️
-
-- `HTML, CSS, SASS, JS, React Framework, JSX, EJS, NodeJS`
-- `Zeplin`
-- `Vs Code`
-- `GitHub` `Git`
-- `React Starter Kit`
+- `HTML`
+- `CSS, Saas`
+- `JavaScript`
+- `React`
+- `JSX`
+- `EJS`
+- `NodeJS`
+- `Visual Studio Code`
+- `React`
+- `GitHub`
+- `GitHub Pages`
 - `MySQL Workbench`
 - `FreeDB`
-
+- `Zeplin`
 
 &nbsp;
 
@@ -41,4 +47,4 @@ Interesting shops
 &nbsp;
 
 
-© Adalab 2023 | Trótula Promotion
+© Silvia Parada | 2023
